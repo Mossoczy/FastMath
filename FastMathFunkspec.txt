@@ -1,0 +1,10 @@
+Terjedelme legyen 2x annyi mint az előző projekté 
+Rendszer célja a szórakoztató jellegű tanítás
+Követelmény, határidő előtti befejezés 
+Használati eset: az ember matematikai képességeinek határait feszegeti az egyre nehezebb 
+de annál több pontot érő feladatok megoldása 
+Használati esetek megfelelnek a követelményeknek
+A program megírásakor ügyeltünk a szoftver felhasználó barátságosságára, így nem akadályozza a 
+felhasználót célja elérésében.
+Az felhasználó tud választani különböző nehézségű feladatok közül 
+Minden egyes részlethez megjegyzésbe ki van fejtve, hogy az adott rész mire használható
