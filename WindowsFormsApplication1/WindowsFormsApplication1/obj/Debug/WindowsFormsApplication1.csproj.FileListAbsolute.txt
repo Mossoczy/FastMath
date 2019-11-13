@@ -1,0 +1,3 @@
+C:\Users\user\Downloads\FastMath-master\FastMath-master\FastMath\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\user\Downloads\FastMath\FastMath-master\FastMath\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\user\Documents\FastMath\FastMath\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
