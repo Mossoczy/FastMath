@@ -13,6 +13,9 @@ namespace WindowsFormsApplication2
     public partial class Form1 : Form
     {
         public int timeLeft;
+        public int a;
+        public int b;
+        public int seg;
         public Form1()
         {
             InitializeComponent();
@@ -20,13 +23,13 @@ namespace WindowsFormsApplication2
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            timeLeft = 1000;
+            timeLeft = 100;
             Random rnd = new Random();
-            int a = rnd.Next(100) + 1;
-            int b = rnd.Next(100) + 1;
+            a = rnd.Next(100) + 1;
+            b = rnd.Next(100) + 1;
             aLabel.Text = a.ToString();
             bLabel.Text = b.ToString();
-
+            seg = a + b;
             timer1.Start();
 
             startButton.Enabled = false;
@@ -41,13 +44,34 @@ namespace WindowsFormsApplication2
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            timeLeft--;
-            timeLabel.Text = timeLeft.ToString();
+            if(timeLeft>0)
+            { 
+                timeLeft--;
+                timeLabel.Text = timeLeft.ToString();
+            }
+            if(timeLeft==0)
+            {
+                doneButton.Enabled = false;
+                startButton.Enabled = true;
+                timer1.Stop();
+                timeLabel.Text = "";
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+       
+
+        private void doneButton_Click(object sender, EventArgs e)
         {
-
+            doneButton.Enabled = false;
+            startButton.Enabled = true;
+            timer1.Stop();
+            yoLabel.Text = "Helyes megoldás: "+seg;
+            if(seg == answerBox.Text)
+            {
+                yodbLabel.Text = "Helyes megoldások száma: ";
+            }
         }
+
+        
     }
 }

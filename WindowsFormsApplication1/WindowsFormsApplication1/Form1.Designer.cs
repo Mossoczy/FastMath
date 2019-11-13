@@ -28,25 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.StartButton = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            this.startButton = new System.Windows.Forms.Button();
             this.doneButton = new System.Windows.Forms.Button();
             this.aLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.bLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.timeLabel = new System.Windows.Forms.Label();
             this.answerBox = new System.Windows.Forms.TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.yoLabel = new System.Windows.Forms.Label();
+            this.yodbLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // StartButton
+            // startButton
             // 
-            this.StartButton.Location = new System.Drawing.Point(12, 276);
-            this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(356, 23);
-            this.StartButton.TabIndex = 0;
-            this.StartButton.Text = "Start";
-            this.StartButton.UseVisualStyleBackColor = true;
-            this.StartButton.Click += new System.EventHandler(this.button1_Click);
+            this.startButton.AccessibleName = "startButton";
+            this.startButton.Location = new System.Drawing.Point(12, 276);
+            this.startButton.Name = "startButton";
+            this.startButton.Size = new System.Drawing.Size(356, 23);
+            this.startButton.TabIndex = 0;
+            this.startButton.Text = "Start";
+            this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
             // doneButton
             // 
@@ -56,6 +61,7 @@
             this.doneButton.TabIndex = 1;
             this.doneButton.Text = "Done";
             this.doneButton.UseVisualStyleBackColor = true;
+            this.doneButton.Click += new System.EventHandler(this.doneButton_Click);
             // 
             // aLabel
             // 
@@ -97,15 +103,15 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "=";
             // 
-            // label5
+            // timeLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(331, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(23, 25);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "0";
+            this.timeLabel.AutoSize = true;
+            this.timeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.timeLabel.Location = new System.Drawing.Point(331, 0);
+            this.timeLabel.Name = "timeLabel";
+            this.timeLabel.Size = new System.Drawing.Size(23, 25);
+            this.timeLabel.TabIndex = 6;
+            this.timeLabel.Text = "0";
             // 
             // answerBox
             // 
@@ -114,19 +120,45 @@
             this.answerBox.Size = new System.Drawing.Size(356, 20);
             this.answerBox.TabIndex = 7;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // yoLabel
+            // 
+            this.yoLabel.AutoSize = true;
+            this.yoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.yoLabel.Location = new System.Drawing.Point(9, 49);
+            this.yoLabel.Name = "yoLabel";
+            this.yoLabel.Size = new System.Drawing.Size(134, 20);
+            this.yoLabel.TabIndex = 8;
+            this.yoLabel.Text = "Helyes megoldás:";
+            // 
+            // yodbLabel
+            // 
+            this.yodbLabel.AutoSize = true;
+            this.yodbLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.yodbLabel.Location = new System.Drawing.Point(9, 73);
+            this.yodbLabel.Name = "yodbLabel";
+            this.yodbLabel.Size = new System.Drawing.Size(202, 20);
+            this.yodbLabel.TabIndex = 9;
+            this.yodbLabel.Text = "Helyes megoldások száma:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(380, 311);
+            this.Controls.Add(this.yodbLabel);
+            this.Controls.Add(this.yoLabel);
             this.Controls.Add(this.answerBox);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.bLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.aLabel);
             this.Controls.Add(this.doneButton);
-            this.Controls.Add(this.StartButton);
+            this.Controls.Add(this.startButton);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -137,14 +169,17 @@
 
         #endregion
 
-        private System.Windows.Forms.Button StartButton;
+        private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Button doneButton;
         private System.Windows.Forms.Label aLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label bLabel;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label timeLabel;
         private System.Windows.Forms.TextBox answerBox;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label yoLabel;
+        private System.Windows.Forms.Label yodbLabel;
     }
 }
 
