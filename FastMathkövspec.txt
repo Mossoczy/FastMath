@@ -1,8 +1,9 @@
-Hiba nélküli, tökéletesen muködo programot akarunk kifejleszteni mely mindenki számára elérheto
+Hiba nélküli, tökéletesen muködő programot akarunk kifejleszteni mely mindenki számára elérheto
 Követelmény, hogy a program a határidő lejárta előtt elkészüljön és működőképes állapotú legyen 
 GITHUB-on való szerkesztés mellőzése
 A játék muködo képes, apróbb hibák akadnak melyeken dolgozunk
 Saját tudás alapján írodjon a program 
 Mindenki egyaránt vegyen részt minden feladat elkészítésében
 Fogalomszótár: GIT-verzió kezeléshez használt metódus
- 
+A program jelenleg még fejlesztés alatt áll, a főprogram már elkészült.A főprogramból megnyitható
+további formok fejlesztése folyamatban van.
