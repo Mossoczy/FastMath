@@ -40,6 +40,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.yoLabel = new System.Windows.Forms.Label();
             this.yodbLabel = new System.Windows.Forms.Label();
+            this.valasszBox = new System.Windows.Forms.CheckedListBox();
+            this.vissza = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // startButton
@@ -138,17 +140,42 @@
             // 
             this.yodbLabel.AutoSize = true;
             this.yodbLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.yodbLabel.Location = new System.Drawing.Point(9, 73);
+            this.yodbLabel.Location = new System.Drawing.Point(8, 69);
             this.yodbLabel.Name = "yodbLabel";
             this.yodbLabel.Size = new System.Drawing.Size(202, 20);
             this.yodbLabel.TabIndex = 9;
             this.yodbLabel.Text = "Helyes megoldások száma:";
+            // 
+            // valasszBox
+            // 
+            this.valasszBox.FormattingEnabled = true;
+            this.valasszBox.Items.AddRange(new object[] {
+            "Könnyű",
+            "Közepes",
+            "Nehéz"});
+            this.valasszBox.Location = new System.Drawing.Point(276, 49);
+            this.valasszBox.Name = "valasszBox";
+            this.valasszBox.Size = new System.Drawing.Size(78, 49);
+            this.valasszBox.TabIndex = 10;
+            this.valasszBox.SelectedIndexChanged += new System.EventHandler(this.valasszBox_SelectedIndexChanged);
+            // 
+            // vissza
+            // 
+            this.vissza.Location = new System.Drawing.Point(178, 174);
+            this.vissza.Name = "vissza";
+            this.vissza.Size = new System.Drawing.Size(75, 23);
+            this.vissza.TabIndex = 11;
+            this.vissza.Text = "button1";
+            this.vissza.UseVisualStyleBackColor = true;
+            this.vissza.Click += new System.EventHandler(this.vissza_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(380, 311);
+            this.Controls.Add(this.vissza);
+            this.Controls.Add(this.valasszBox);
             this.Controls.Add(this.yodbLabel);
             this.Controls.Add(this.yoLabel);
             this.Controls.Add(this.answerBox);
@@ -180,6 +207,8 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label yoLabel;
         private System.Windows.Forms.Label yodbLabel;
+        private System.Windows.Forms.CheckedListBox valasszBox;
+        private System.Windows.Forms.Button vissza;
     }
 }
 
