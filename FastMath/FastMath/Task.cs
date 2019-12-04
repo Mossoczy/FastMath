@@ -84,6 +84,7 @@ namespace FastMath
 
         private void done_Click(object sender, EventArgs e)
         {
+            counter = 21;
             Operation.Text = művelet.ToString();
             switch (művelet)
             {
