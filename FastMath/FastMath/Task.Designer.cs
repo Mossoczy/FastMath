@@ -39,7 +39,7 @@
             this.done = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.timeRemain = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.answer = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -124,12 +124,12 @@
             this.timeRemain.TabIndex = 7;
             this.timeRemain.Text = "Hátralévő idő:";
             // 
-            // textBox1
+            // answer
             // 
-            this.textBox1.Location = new System.Drawing.Point(153, 135);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(51, 20);
-            this.textBox1.TabIndex = 8;
+            this.answer.Location = new System.Drawing.Point(153, 135);
+            this.answer.Name = "answer";
+            this.answer.Size = new System.Drawing.Size(51, 20);
+            this.answer.TabIndex = 8;
             // 
             // label1
             // 
@@ -146,7 +146,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.answer);
             this.Controls.Add(this.timeRemain);
             this.Controls.Add(this.done);
             this.Controls.Add(this.incorrectAnswers);
@@ -176,7 +176,7 @@
         private System.Windows.Forms.Button done;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Label timeRemain;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox answer;
         private System.Windows.Forms.Label label1;
     }
 }

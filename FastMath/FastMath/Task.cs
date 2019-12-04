@@ -15,7 +15,8 @@ namespace FastMath
         string difficulty;
         char művelet;
         int counter = 20;
-        double a = 0, b = 0;
+        int cAnswers;
+        double a = 0, b = 0, result;
         public Task(string difficulty,char művelet)
         {
             InitializeComponent();
@@ -89,6 +90,7 @@ namespace FastMath
             }
             firstNum.Text = a.ToString();
             secondNum.Text = b.ToString();
+            result = a + b;
         }
         private void Kivonas(string difficulty)
         {
@@ -135,6 +137,8 @@ namespace FastMath
             }
             firstNum.Text = a.ToString();
             secondNum.Text = b.ToString();
+            result = a - b;
+
         }
         private void Szorzas(string difficulty)
         {
@@ -180,6 +184,8 @@ namespace FastMath
             }
             firstNum.Text = a.ToString();
             secondNum.Text = b.ToString();
+            result = a * b;
+
         }
         private void Osztas(string difficulty)
         {
@@ -210,6 +216,11 @@ namespace FastMath
             }
             timer.Enabled = true;
             timer.Start();
+            if (double.Parse(answer.Text)==result)
+            {
+                cAnswers+=1;
+                correctAnswers.Text = "Helyes megoldások: " + cAnswers;
+            }
         }
     }
 }
