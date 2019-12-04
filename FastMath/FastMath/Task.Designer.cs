@@ -39,21 +39,25 @@
             this.done = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.timeRemain = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // firstNum
             // 
             this.firstNum.AutoSize = true;
-            this.firstNum.Location = new System.Drawing.Point(12, 138);
+            this.firstNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.firstNum.Location = new System.Drawing.Point(31, 138);
             this.firstNum.Name = "firstNum";
             this.firstNum.Size = new System.Drawing.Size(40, 13);
             this.firstNum.TabIndex = 0;
             this.firstNum.Text = "1.szám";
+            this.firstNum.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // secondNum
             // 
             this.secondNum.AutoSize = true;
-            this.secondNum.Location = new System.Drawing.Point(141, 138);
+            this.secondNum.Location = new System.Drawing.Point(93, 138);
             this.secondNum.Name = "secondNum";
             this.secondNum.Size = new System.Drawing.Size(40, 13);
             this.secondNum.TabIndex = 1;
@@ -64,9 +68,10 @@
             this.Operation.AutoSize = true;
             this.Operation.Location = new System.Drawing.Point(77, 138);
             this.Operation.Name = "Operation";
-            this.Operation.Size = new System.Drawing.Size(45, 13);
+            this.Operation.Size = new System.Drawing.Size(14, 13);
             this.Operation.TabIndex = 2;
-            this.Operation.Text = "Művelet";
+            this.Operation.Text = "#";
+            this.Operation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // correctAnswer
             // 
@@ -101,7 +106,7 @@
             this.done.Name = "done";
             this.done.Size = new System.Drawing.Size(75, 23);
             this.done.TabIndex = 6;
-            this.done.Text = "Kész";
+            this.done.Text = "Start";
             this.done.UseVisualStyleBackColor = true;
             this.done.Click += new System.EventHandler(this.done_Click);
             // 
@@ -119,11 +124,29 @@
             this.timeRemain.TabIndex = 7;
             this.timeRemain.Text = "Hátralévő idő:";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(153, 135);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(51, 20);
+            this.textBox1.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(134, 138);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(13, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "=";
+            // 
             // Task
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.timeRemain);
             this.Controls.Add(this.done);
             this.Controls.Add(this.incorrectAnswers);
@@ -152,5 +175,8 @@
         private System.Windows.Forms.Label incorrectAnswers;
         private System.Windows.Forms.Button done;
         private System.Windows.Forms.Timer timer;
-        private System.Windows.Forms.Label timeRemain;    }
+        private System.Windows.Forms.Label timeRemain;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+    }
 }

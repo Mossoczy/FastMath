@@ -15,6 +15,7 @@ namespace FastMath
         string difficulty;
         char művelet;
         int counter = 20;
+        double a = 0, b = 0;
         public Task(string difficulty,char művelet)
         {
             InitializeComponent();
@@ -46,7 +47,6 @@ namespace FastMath
         private void Osszeadas(string difficulty)
         {
             Random rnd = new Random();
-            double a=0, b =0;
             switch (difficulty)
             {
                 case "ez":
@@ -58,24 +58,128 @@ namespace FastMath
                     b = rnd.Next(1001);
                     break;
                 case "hard":
-                    a = rnd.NextDouble();
-                    b = rnd.NextDouble();
+                    a = rnd.NextDouble() *50;
+                    b = rnd.NextDouble() *50;
+                    a=Math.Round(a,2);
+                    b=Math.Round(b,2);
                     break;
                 case "mixed":
+                    int mix = rnd.Next(1,4);
+                    switch (mix)
+	                {
+                        case 1:
+                            difficulty = "ez";
+                            Osszeadas(difficulty);
+                            break;
+                        case 2:
+                            difficulty = "med";
+                            Osszeadas(difficulty);
+                            break;
+                        case 3:
+                            difficulty = "hard";
+                            Osszeadas(difficulty);
+                            break;
+                        default:
+                            MessageBox.Show("ERR");
+                            break;
+	                }
                     break;
                 default:
                     break;
             }
-            firstNum.Text = a.ToString("F2");
-            secondNum.Text = b.ToString("F2");
+            firstNum.Text = a.ToString();
+            secondNum.Text = b.ToString();
         }
         private void Kivonas(string difficulty)
         {
-
+            Random rnd = new Random();
+            switch (difficulty)
+            {
+                case "ez":
+                    a = rnd.Next(101);
+                    b = rnd.Next(101);
+                    break;
+                case "med":
+                    a = rnd.Next(1001);
+                    b = rnd.Next(1001);
+                    break;
+                case "hard":
+                    a = rnd.NextDouble() * 50;
+                    b = rnd.NextDouble() * 50;
+                    a = Math.Round(a, 2);
+                    b = Math.Round(b, 2);
+                    break;
+                case "mixed":
+                    int mix = rnd.Next(1, 4);
+                    switch (mix)
+                    {
+                        case 1:
+                            difficulty = "ez";
+                            Kivonas(difficulty);
+                            break;
+                        case 2:
+                            difficulty = "med";
+                            Kivonas(difficulty);
+                            break;
+                        case 3:
+                            difficulty = "hard";
+                            Kivonas(difficulty);
+                            break;
+                        default:
+                            MessageBox.Show("ERR");
+                            break;
+                    }
+                    break;
+                default:
+                    break;
+            }
+            firstNum.Text = a.ToString();
+            secondNum.Text = b.ToString();
         }
         private void Szorzas(string difficulty)
         {
-
+            Random rnd = new Random();
+            switch (difficulty)
+            {
+                case "ez":
+                    a = rnd.Next(11);
+                    b = rnd.Next(11);
+                    break;
+                case "med":
+                    a = rnd.Next(51);
+                    b = rnd.Next(51);
+                    break;
+                case "hard":
+                    a = rnd.NextDouble() * 20;
+                    b = rnd.Next(31) ;
+                    a = Math.Round(a, 2);
+                    break;
+                case "mixed":
+                    int mix = rnd.Next(1, 4);
+                    switch (mix)
+                    {
+                        case 1:
+                            difficulty = "ez";
+                            Szorzas(difficulty);
+                            break;
+                        case 2:
+                            difficulty = "med";
+                            Szorzas(difficulty);
+                            break;
+                        case 3:
+                            difficulty = "hard";
+                            Szorzas(difficulty);
+                            break;
+                        default:
+                            MessageBox.Show("ERR");
+                            break;
+                    }
+                    break;
+                default:
+                    break;
+            }
+            firstNum.Text = a.ToString();
+            secondNum.Text = b.ToString();
         }
         private void Osztas(string difficulty)
         {
@@ -84,6 +188,7 @@ namespace FastMath
 
         private void done_Click(object sender, EventArgs e)
         {
+            done.Text = "Kész";
             counter = 21;
             Operation.Text = művelet.ToString();
             switch (művelet)
