@@ -16,7 +16,7 @@ namespace FastMath
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ChooseOperation());
+            Application.Run(new FastMath());
         }
     }
 }
