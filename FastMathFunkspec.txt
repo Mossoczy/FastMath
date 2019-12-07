@@ -6,6 +6,16 @@
 - Fejlessze a tanulók képességeit
 - A tanulók szórakoztatásas
 
+2. Vágyálom rendszer
+- Az program betöltésekor egy főmenü fogadja a felhasználót, ahol választhat négy matematikai művelet (összeadás, kivonás, szorzás, osztás)
+- A feladat kiválasztása után választaniuk kell a játékosnak, hogy milyen nehézségen tenné próbára magát.
+- Ez után a megfelelő beállításokkal elindul a játék, addig fut amig, le nem allítja a felhasználó (leállítás után a program főmenüjét kapjuk vissza)
+
+
+
+
+
+
 Terjedelme legyen 2x annyi mint az előző projekté 
 Követelmény, határidő előtti befejezés 
 Használati eset: az ember matematikai képességeinek határait feszegeti az egyre nehezebb 
