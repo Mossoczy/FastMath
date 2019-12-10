@@ -1,3 +1,34 @@
+﻿1. Jelenlegi üzleti folyamatok modellje
+Általános iskolások -> Nincs több közösségi média -> Helyette egy -> Itt tanító/oktató jellegű játékokat érnek el
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Hiba nélküli, tökéletesen muködő programot akarunk kifejleszteni mely mindenki számára elérheto
 Követelmény, hogy a program a határidő lejárta előtt elkészüljön és működőképes állapotú legyen 
 GITHUB-on való szerkesztés mellőzése
