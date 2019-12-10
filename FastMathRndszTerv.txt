@@ -14,3 +14,21 @@ opercációs rendszerrel(Windows 7, Windows 10, Linux)
 Betenbuk Viktor: Fő oldal, a program fejlesztéseés dizájn.
 Mossóczy Kristóf:  A program fejlesztéseés dizájn.
 Czafik Milán:  A program fejlesztéseés dizájn.
+
+Mérföldkövek:
+I.    Feladatok kiosztása megegyezés és tudás szerint.
+II.   Dokumentációk, leírások képernyő tervek véglegesítése.
+III.  Git repo folyamatos frissítése amikor akármi elkészül.
+IV.   Folyamatos kapcsolattartás a projektben résztvevőkkel.
+V.   Tesztelési folyamatok befejezése.
+VI.  Felkészülés a projekt bemutatására.
+VII. Bemutatás.
+
+3. Funkcionális leírás
+A program funkcionális leírása:
+Futtatás után egy kezelőfelület jelenik meg, ahol el kell döntenie a felhasználónak, hogy mit szeretne gyakorloni
+(összeadás, kivonás, szorzás, osztás), valamint milyen nehézséggel szeretné azt megtenni(könnyű, közepes, nehéz).
+Miután a felhasználó eldöntötte, mit szeretne gyakorolni, egy másik ablak jelenik meg, rajta két számmal, egy
+műveletjellel, egy számlálóval(mely a hátralévő időt mutatja)
+Ezen kívül a helyes/helytelen megoldások számai is fel van tűntetve.
+
