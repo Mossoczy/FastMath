@@ -1,4 +1,7 @@
-Mint tudjuk, matematikát csak egy módon tudja elsajátítani az pedig a gyakorlás. 
+﻿1. Bevezetés
+Mai rohanó világunkban a közösségi média megpecsételi fiatal tanulóink életét.
+Iskolánk vezetősége ezért állt elő azzal a brilliáns ötlettel, hogy készítsünk a napközis tanulók számára oktató
+jellegű játékokat. Mint tudjuk, matematikát csak egy módon tudja elsajátítani az pedig a gyakorlás. 
 Az általunk készített játékkal ezt meg tudjuk valósítani mellyel különböző matematikai 
 algoritmusokat tudunk gyakorolni. Ha a felhasználó úgy érzi elsajátította a kellő tudást 
 akkor akár egyel nehezebb szintre is léphet.
