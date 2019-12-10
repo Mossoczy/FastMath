@@ -13,19 +13,23 @@ namespace FastMath
     public partial class FastMath : Form
     {
         string difficulty;
+        bool wrong = false;
+        bool correct = false;
+        bool invalid = false;
         char művelet;
         int counter;
         int cAnswers;
         int incAnswers;
         Random rnd= new Random();
-        double a = 0, b = 0, result;
-        int screenWidth = Screen.PrimaryScreen.Bounds.Width;
-        int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+        double a = 0, b = 0, result, answerGiven;
+        int taskCount;
+        int maxTask;
 
 
         public FastMath()
         {
             InitializeComponent();
+            maxTask = 10;
         }
 
         private void Osszeadas_Click(object sender, EventArgs e)
@@ -86,7 +90,10 @@ namespace FastMath
         private void startTask()
         {
             counter = 20;
+            tasks.Text = "Feladatok: 10/" + (taskCount + 1);
             timeRemain.Text = "Hátralévő idő:\n" + counter + " másodperc";
+            answer.Text = string.Empty;
+            timer.Start();
             switch (művelet)
             {
                 case '+':
@@ -119,9 +126,16 @@ namespace FastMath
             }
             else
             {
+                taskCount++;
                 timer.Stop();
                 timeRemain.Text = "Hátralévő idő:\n" + "Az idő lejárt!";
                 MessageBox.Show("Sajnos nem sikerült időben befejezni.", ":(");
+                if (taskCount<=maxTask)
+                {
+                    incAnswers++;
+                    incorrectAnswers.Text = "Helytelen megoldások száma: " + incAnswers;
+                    startTask();
+                }
             }
         }
         private void DoOsszeadas(string difficulty)
@@ -211,7 +225,7 @@ namespace FastMath
                 default:
                     break;
             }
-            firstNum.Text = a.ToString() + művelet + b.ToString() + "=";
+            firstNum.Text = a.ToString() + művelet + b.ToString() + "=?";
             result = a - b;
 
         }
@@ -256,7 +270,7 @@ namespace FastMath
                 default:
                     break;
             }
-            firstNum.Text = a.ToString() + művelet + b.ToString() + "=";
+            firstNum.Text = a.ToString() + művelet + b.ToString() + "=?";
             result = a * b;
 
         }
@@ -269,13 +283,12 @@ namespace FastMath
                     b = rnd.Next(11);
                     break;
                 case "med":
-                    a = rnd.Next(51);
-                    b = rnd.Next(51);
+                    a = rnd.Next(21);
+                    b = rnd.Next(21);
                     break;
                 case "hard":
-                    a = rnd.NextDouble() * 20;
-                    b = rnd.Next(31);
-                    a = Math.Round(a, 2);
+                    a = rnd.Next(41);
+                    b = rnd.Next(41);
                     break;
                 case "mixed":
                     int mix = rnd.Next(1, 4);
@@ -301,29 +314,62 @@ namespace FastMath
                 default:
                     break;
             }
-            firstNum.Text = a.ToString() + művelet + b.ToString() + "=";
-            result = a * b;
+            firstNum.Text = (a*b).ToString() + művelet + b.ToString() + "=?";
+            result = a ;
         }
 
         private void done_Click(object sender, EventArgs e)
         {
-            if (answer.Text==result.ToString())
+            CheckValidAnswer();
+
+            if (answerGiven==result)
             {
                 cAnswers += 1;
+                correctAnswer.ForeColor = Color.Green;
+                correctAnswer.Text = "Helyes megoldás!";
+                correct = true;
             }
-            else
+            else if(invalid==false)
             {
+                correctAnswer.ForeColor = Color.Red;
+                correctAnswer.Text = "Helyes megoldás:\n"+result;
                 incAnswers += 1;
+                wrong = true;
             }
             correctAnswers.Text = "Helyes megoldások száma: " + cAnswers;
-            correctAnswer.Text="Helyes megoldás:\n"+result;
             correctAnswer.TextAlign = ContentAlignment.MiddleCenter;
             incorrectAnswers.Text = "Helytelen megoldások száma: " + incAnswers;
             done.Text = "Kész";
-            startTask();
+            if (taskCount+1 == maxTask)
+            {
+                timer.Stop();
+                MessageBox.Show("Vége a " + (taskCount+1) + " feladatnak.\nHelyes megoldások: " + cAnswers + "\nHelytelen megoldások: " + incAnswers,"Game Over");
+                this.Controls.Clear();
+                InitializeComponent();
+            }
 
-            timer.Enabled = true;
-            timer.Start();
+            if ((wrong==true || correct==true || counter==0) && invalid==false)
+            {
+                taskCount++;
+                startTask();
+                timer.Enabled = true;
+                timer.Start();
+            }
+        }
+        private void CheckValidAnswer()
+        {
+            invalid = false;
+            try
+            {
+                answerGiven=double.Parse(answer.Text);
+            }
+            catch (Exception)
+            {
+                invalid = true;
+                timer.Stop();
+                MessageBox.Show("Érvénytelen érteket adtál meg");
+                timer.Start();
+            }
         }
     }
 }

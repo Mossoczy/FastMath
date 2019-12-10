@@ -193,24 +193,24 @@
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.timeRemain = new System.Windows.Forms.Label();
             this.answer = new System.Windows.Forms.TextBox();
+            this.tasks = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // firstNum
             // 
-            this.firstNum.AutoSize = true;
-            this.firstNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.firstNum.Location = new System.Drawing.Point(84, 47);
+            this.firstNum.AutoSize = false;
+            this.firstNum.Location = new System.Drawing.Point(74, 43);
             this.firstNum.Name = "firstNum";
             this.firstNum.Font = new System.Drawing.Font("Arial", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.firstNum.Size = new System.Drawing.Size(44, 13);
-            this.firstNum.TabIndex = 0;
+            this.firstNum.Size = new System.Drawing.Size(800, 100);
+            this.firstNum.TabIndex = 6;
             this.firstNum.Text = "művelet";
-            this.firstNum.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.firstNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // correctAnswer
             // 
             this.correctAnswer.AutoSize = true;
-            this.correctAnswer.Location = new System.Drawing.Point(43, 157);
+            this.correctAnswer.Location = new System.Drawing.Point(330, 143);
             this.correctAnswer.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.correctAnswer.Name = "correctAnswer";
             this.correctAnswer.Size = new System.Drawing.Size(90, 13);
@@ -220,7 +220,7 @@
             // correctAnswers
             // 
             this.correctAnswers.AutoSize = true;
-            this.correctAnswers.Location = new System.Drawing.Point(757, 145);
+            this.correctAnswers.Location = new System.Drawing.Point(29, 506);
             this.correctAnswers.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.correctAnswers.Name = "correctAnswers";
             this.correctAnswers.Size = new System.Drawing.Size(135, 13);
@@ -230,7 +230,7 @@
             // incorrectAnswers
             // 
             this.incorrectAnswers.AutoSize = true;
-            this.incorrectAnswers.Location = new System.Drawing.Point(757, 190);
+            this.incorrectAnswers.Location = new System.Drawing.Point(265, 506);
             this.incorrectAnswers.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.incorrectAnswers.Name = "incorrectAnswers";
             this.incorrectAnswers.Size = new System.Drawing.Size(147, 13);
@@ -239,7 +239,7 @@
             // 
             // done
             // 
-            this.done.Location = new System.Drawing.Point(161, 412);
+            this.done.Location = new System.Drawing.Point(436, 402);
             this.done.Name = "done";
             this.done.Size = new System.Drawing.Size(75, 23);
             this.done.TabIndex = 6;
@@ -256,7 +256,7 @@
             // 
             this.timeRemain.AutoSize = true;
             this.timeRemain.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.timeRemain.Location = new System.Drawing.Point(414, 9);
+            this.timeRemain.Location = new System.Drawing.Point(850, 26);
             this.timeRemain.Name = "timeRemain";
             this.timeRemain.Size = new System.Drawing.Size(158, 27);
             this.timeRemain.TabIndex = 7;
@@ -265,18 +265,30 @@
             // 
             // answer
             // 
-            this.answer.Location = new System.Drawing.Point(95, 281);
+            this.answer.Location = new System.Drawing.Point(373, 264);
             this.answer.Name = "answer";
             this.answer.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.answer.Size = new System.Drawing.Size(51, 20);
+            this.answer.Size = new System.Drawing.Size(200, 55);
+            this.answer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.answer.TabIndex = 8;
             this.answer.Text = null;
+            // 
+            // tasks
+            // 
+            this.tasks.AutoSize = true;
+            this.tasks.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tasks.Location = new System.Drawing.Point(410, 13);
+            this.tasks.Name = "tasks";
+            this.tasks.Size = new System.Drawing.Size(119, 20);
+            this.tasks.TabIndex = 7;
+            this.tasks.Text = "Feladatok: 10/2";
             // 
             // Task
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.CenterToScreen();
             this.Controls.Add(this.answer);
             this.Controls.Add(this.timeRemain);
             this.Controls.Add(this.done);
@@ -284,9 +296,9 @@
             this.Controls.Add(this.correctAnswers);
             this.Controls.Add(this.correctAnswer);
             this.Controls.Add(this.firstNum);
+            this.Controls.Add(this.tasks);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Task";
-            this.CenterToScreen();
             this.Text = "Feladat";
             this.Load += new System.EventHandler(this.Task_Load);
             this.ResumeLayout(false);
@@ -300,6 +312,7 @@
         private System.Windows.Forms.Label correctAnswer;
         private System.Windows.Forms.Label correctAnswers;
         private System.Windows.Forms.Label incorrectAnswers;
+        private System.Windows.Forms.Label tasks;
         private System.Windows.Forms.Button done;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Label timeRemain;
