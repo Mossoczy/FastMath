@@ -3,8 +3,10 @@ Mai rohanó világunkban a közösségi média megpecsételi fiatal tanulóink �
 Iskolánk vezetősége ezért állt elő azzal a brilliáns ötlettel, hogy készítsünk a napközis tanulók számára oktató
 jellegű játékokat. Mint tudjuk, matematikát csak egy módon tudja elsajátítani az pedig a gyakorlás. 
 Az általunk készített játékkal ezt meg tudjuk valósítani mellyel különböző matematikai 
-algoritmusokat tudunk gyakorolni. Ha a felhasználó úgy érzi elsajátította a kellő tudást 
+műveleteket tudunk gyakorolni. Ha a felhasználó úgy érzi elsajátította a kellő tudást 
 akkor akár egyel nehezebb szintre is léphet.
+
+2. Projekt terv
 A rendszer létrehozásához rendelkezésre álló erőforrások: A felhasználó által
 használt notebookok/asztali számítógépek melyeknek rendelkezniük kell egy futó
 opercációs rendszerrel(Windows 7, Windows 10, Linux)
