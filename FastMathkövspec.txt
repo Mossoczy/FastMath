@@ -1,6 +1,9 @@
 ﻿1. Jelenlegi üzleti folyamatok modellje
 Általános iskolások -> Nincs több közösségi média -> Helyette egy -> Itt tanító/oktató jellegű játékokat érnek el
 
+2. Igényelt üzleti folyamatok modellje
+A napközis gépeken megszüntetni a fölösleges weboldalakat. -> Helyette készségfejlesztő, gondolkodtató játékokathasználják. -> Legyen könnyen kezelhető! -> Nehézségi szintek beépítése -> Akármennyi ideig próbálkozhat vele.
+megismertetése a gyerekekkel.
 
 
 
