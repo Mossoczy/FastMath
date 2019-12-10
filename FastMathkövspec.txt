@@ -5,8 +5,9 @@
 A napközis gépeken megszüntetni a fölösleges weboldalakat. -> Helyette készségfejlesztő, gondolkodtató játékokathasználják. -> Legyen könnyen kezelhető! -> Nehézségi szintek beépítése -> Akármennyi ideig próbálkozhat vele.
 megismertetése a gyerekekkel.
 
-
-
+3. Vágyálom rendszer 
+Szeretnénk olyan játékot készíteni, amely könnyen kezelhetőek és nem állnak messze az oktatástól
+sem, gondolunk itt logika bővítésére.
 
 
 
