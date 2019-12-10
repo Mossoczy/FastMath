@@ -16,7 +16,11 @@ namespace FastMath
         char művelet;
         int counter;
         int cAnswers;
+        int incAnswers;
+        Random rnd= new Random();
         double a = 0, b = 0, result;
+        int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+        int screenHeight = Screen.PrimaryScreen.Bounds.Height;
 
 
         public FastMath()
@@ -81,7 +85,6 @@ namespace FastMath
         }
         private void startTask()
         {
-            firstNum.Font = new Font("Arial", 24, FontStyle.Bold);
             counter = 20;
             timeRemain.Text = "Hátralévő idő:\n" + counter + " másodperc";
             switch (művelet)
@@ -123,7 +126,6 @@ namespace FastMath
         }
         private void DoOsszeadas(string difficulty)
         {
-            Random rnd = new Random();
             switch (difficulty)
             {
                 case "ez":
@@ -169,7 +171,6 @@ namespace FastMath
         }
         private void DoKivonas(string difficulty)
         {
-            Random rnd = new Random();
             switch (difficulty)
             {
                 case "ez":
@@ -216,7 +217,6 @@ namespace FastMath
         }
         private void DoSzorzas(string difficulty)
         {
-            Random rnd = new Random();
             switch (difficulty)
             {
                 case "ez":
@@ -262,11 +262,63 @@ namespace FastMath
         }
         private void DoOsztas(string difficulty)
         {
-
+            switch (difficulty)
+            {
+                case "ez":
+                    a = rnd.Next(11);
+                    b = rnd.Next(11);
+                    break;
+                case "med":
+                    a = rnd.Next(51);
+                    b = rnd.Next(51);
+                    break;
+                case "hard":
+                    a = rnd.NextDouble() * 20;
+                    b = rnd.Next(31);
+                    a = Math.Round(a, 2);
+                    break;
+                case "mixed":
+                    int mix = rnd.Next(1, 4);
+                    switch (mix)
+                    {
+                        case 1:
+                            difficulty = "ez";
+                            DoSzorzas(difficulty);
+                            break;
+                        case 2:
+                            difficulty = "med";
+                            DoSzorzas(difficulty);
+                            break;
+                        case 3:
+                            difficulty = "hard";
+                            DoSzorzas(difficulty);
+                            break;
+                        default:
+                            MessageBox.Show("ERR");
+                            break;
+                    }
+                    break;
+                default:
+                    break;
+            }
+            firstNum.Text = a.ToString() + művelet + b.ToString() + "=";
+            result = a * b;
         }
 
         private void done_Click(object sender, EventArgs e)
         {
+            if (answer.Text==result.ToString())
+            {
+                cAnswers += 1;
+            }
+            else
+            {
+                incAnswers += 1;
+            }
+            correctAnswers.Text = "Helyes megoldások száma: " + cAnswers;
+            correctAnswer.Text="Helyes megoldás:\n"+result;
+            correctAnswer.TextAlign = ContentAlignment.MiddleCenter;
+            incorrectAnswers.Text = "Helytelen megoldások száma: " + incAnswers;
             done.Text = "Kész";
             startTask();
 
