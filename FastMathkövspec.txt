@@ -1,3 +1,60 @@
+﻿﻿1. Bevezetés
+Mai rohanó világunkban a közösségi média megpecsételi fiatal tanulóink életét.
+Iskolánk vezetősége ezért állt elő azzal a brilliáns ötlettel, hogy készítsünk a napközis tanulók számára oktató
+jellegű játékokat. Ehhez nem kell mást tenni, mint minden egyéb weboldalt
+a délutának órákban letiltani az iskola hálózatában.(Értsük ezalatt a Facebook, Youtube és más egyéb platformokat.)
+
+2. Jelenlegi helyzet
+Jelenleg a tanulók java része használ valamiféle számítógépet(ha mást nem, telefont biztos), ez vezethet ahhoz,
+hogy közösségi oldalakat kezdenek el figyelni, annak ellenére, hogy lenne még tanulnivaló.
+Célünk az, hogy az "unalmas" tollal írt formát leváltsuk, egy modern, számítógépeken használatos alkalmazásokkal.
+
+3. Jelenlegi üzleti folyamatok modellje
+Általános iskolások -> Nincs több közösségi média -> Helyette egy -> Itt tanító/oktató jellegű játékokat érnek el
+
+4. Igényelt üzleti folyamatok modellje
+A napközis gépeken megszüntetni a fölösleges weboldalakat. -> Helyette készségfejlesztő, gondolkodtató játékokathasználják. -> Legyen könnyen kezelhető! -> Nehézségi szintek beépítése -> Akármennyi ideig próbálkozhat vele.
+megismertetése a gyerekekkel.
+
+5. Vágyálom rendszer 
+Szeretnénk olyan játékot készíteni, amely könnyen kezelhetőek és nem állnak messze az oktatástól
+sem, gondolunk itt logika bővítésére.
+
+6. Követlménylista
+ID  Modul            Név                Leírás
+1   Főoldal          Választófelület    A matematikai műveletek közötti választási lehetőség a főoldalon.
+2   Főoldal          Kinézet            Egyszerű kinézet a gyermekek könnyű eligazodása érdekében.
+3   Főoldal          Kinézet            Kinézet megtervezése, deklarálása, képernyőtervek elkészítése
+4   Főoldal          Kinézet            Kinézet implementálása képernyőtervek alapján
+5   FastMath         Kinézet            A kezelőfelület legyen egyértelmű és könnyen használható
+6   FastMath         Dizájn             Az oldal dizájnfelépítése legyen egyszerű és játékos.
+7   FastMath         Dizájn             Játék alapvető kinézetének deklarálása, képernyőtervek elkészítése
+8   FastMath         Dizájn             Dizájn elkészítése képernyőtervek alapján.
+9   FastMath         Játék              Játékfejlesztés, funkciók.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Hiba nélküli, tökéletesen muködő programot akarunk kifejleszteni mely mindenki számára elérheto
 Követelmény, hogy a program a határidő lejárta előtt elkészüljön és működőképes állapotú legyen 
 GITHUB-on való szerkesztés mellőzése

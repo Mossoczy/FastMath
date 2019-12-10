@@ -1,10 +1,48 @@
-Mint tudjuk, matematikát csak egy módon tudja elsajátítani az pedig a gyakorlás. 
+﻿1. Bevezetés
+Mai rohanó világunkban a közösségi média megpecsételi fiatal tanulóink életét.
+Iskolánk vezetősége ezért állt elő azzal a brilliáns ötlettel, hogy készítsünk a napközis tanulók számára oktató
+jellegű játékokat. Mint tudjuk, matematikát csak egy módon tudja elsajátítani az pedig a gyakorlás. 
 Az általunk készített játékkal ezt meg tudjuk valósítani mellyel különböző matematikai 
-algoritmusokat tudunk gyakorolni. Ha a felhasználó úgy érzi elsajátította a kellő tudást 
+műveleteket tudunk gyakorolni. Ha a felhasználó úgy érzi elsajátította a kellő tudást 
 akkor akár egyel nehezebb szintre is léphet.
+
+2. Projekt terv
 A rendszer létrehozásához rendelkezésre álló erőforrások: A felhasználó által
 használt notebookok/asztali számítógépek melyeknek rendelkezniük kell egy futó
 opercációs rendszerrel(Windows 7, Windows 10, Linux)
-Betenbuk Viktor: 
-Mossóczy Kristóf: 
-Czafik Milán: főoldal 
+
+Betenbuk Viktor: Fő oldal, a program fejlesztéseés dizájn.
+Mossóczy Kristóf: A program fejlesztéseés dizájn.
+Czafik Milán: A program fejlesztéseés dizájn.
+
+Mérföldkövek:
+I.    Feladatok kiosztása megegyezés és tudás szerint.
+II.   Dokumentációk, leírások képernyő tervek véglegesítése.
+III.  Git repo folyamatos frissítése amikor akármi elkészül.
+IV.   Folyamatos kapcsolattartás a projektben résztvevőkkel.
+V.   Tesztelési folyamatok befejezése.
+VI.  Felkészülés a projekt bemutatására.
+VII. Bemutatás.
+
+3. Funkcionális leírás
+A program funkcionális leírása:
+Futtatás után egy kezelőfelület jelenik meg, ahol el kell döntenie a felhasználónak, hogy mit szeretne gyakorloni
+(összeadás, kivonás, szorzás, osztás), valamint milyen nehézséggel szeretné azt megtenni(könnyű, közepes, nehéz).
+Miután a felhasználó eldöntötte, mit szeretne gyakorolni, egy másik ablak jelenik meg, rajta két számmal, egy
+műveletjellel, egy számlálóval(mely a hátralévő időt mutatja)
+Ezen kívül a helyes/helytelen megoldások számai is fel van tűntetve.
+
+4. Fizikai Követelmény
+Futtatás módja:
+	-Minden számítógépen lokálisan fut majd
+Futtató környezet:
+	-A felhasználó által használt számítógép operációs rendszere
+Elérhető operációs rendszerek:
+	-Windows 7
+	-Windows 8
+	-Windows 8.1
+	-Windows 10
+Szoftver moduljai:
+	-A szoftvert két Windows Form Application tesz össze
+Fejlesztői környezet:
+	-Visual Studio C#
