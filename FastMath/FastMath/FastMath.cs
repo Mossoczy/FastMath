@@ -326,7 +326,7 @@ namespace FastMath
         private void done_Click(object sender, EventArgs e)
         {
             CheckValidAnswer();
-
+            MessageBox.Show(answerGiven.ToString());
             if (answerGiven==result)
             {
                 cAnswers += 1;
@@ -360,6 +360,7 @@ namespace FastMath
         }
         private void CheckValidAnswer()
         {
+
             invalid = false;
             try
             {
