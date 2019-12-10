@@ -10,6 +10,7 @@ akkor akár egyel nehezebb szintre is léphet.
 A rendszer létrehozásához rendelkezésre álló erőforrások: A felhasználó által
 használt notebookok/asztali számítógépek melyeknek rendelkezniük kell egy futó
 opercációs rendszerrel(Windows 7, Windows 10, Linux)
-Betenbuk Viktor: 
-Mossóczy Kristóf: 
-Czafik Milán: főoldal 
+
+Betenbuk Viktor: Fő oldal, a program fejlesztéseés dizájn.
+Mossóczy Kristóf:  A program fejlesztéseés dizájn.
+Czafik Milán:  A program fejlesztéseés dizájn.
