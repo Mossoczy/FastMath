@@ -81,6 +81,7 @@ namespace FastMath
         }
         private void startTask()
         {
+            firstNum.Font = new Font("Arial", 24, FontStyle.Bold);
             counter = 20;
             timeRemain.Text = "Hátralévő idő:\n" + counter + " másodperc";
             switch (művelet)
@@ -163,7 +164,7 @@ namespace FastMath
                 default:
                     break;
             }
-            firstNum.Text = a.ToString() + művelet + b.ToString() + "=";
+            firstNum.Text = a.ToString() + művelet + b.ToString() + "=?";
             result = a + b;
         }
         private void DoKivonas(string difficulty)

@@ -10,3 +10,12 @@ C:\Users\Longi\Desktop\FastMath\FastMath\obj\Debug\FastMath.pdb
 C:\Users\Longi\Desktop\ProjektLabor\FastMath\FastMath\bin\Debug\FastMath.exe.config
 C:\Users\Longi\Desktop\ProjektLabor\FastMath\FastMath\obj\Debug\FastMath.exe
 C:\Users\Longi\Desktop\ProjektLabor\FastMath\FastMath\obj\Debug\FastMath.pdb
+C:\Users\Longi\Desktop\ProjektLabor\FastMath\FastMath\FastMath\bin\Debug\FastMath.exe.config
+C:\Users\Longi\Desktop\ProjektLabor\FastMath\FastMath\FastMath\obj\Debug\FastMath.exe
+C:\Users\Longi\Desktop\ProjektLabor\FastMath\FastMath\FastMath\obj\Debug\FastMath.pdb
+C:\Users\Longi\Desktop\ProjektLabor\FastMath\FastMath\FastMath\bin\Debug\FastMath.exe
+C:\Users\Longi\Desktop\ProjektLabor\FastMath\FastMath\FastMath\bin\Debug\FastMath.pdb
+C:\Users\Longi\Desktop\ProjektLabor\FastMath\FastMath\FastMath\obj\Debug\FastMath.csprojResolveAssemblyReference.cache
+C:\Users\Longi\Desktop\ProjektLabor\FastMath\FastMath\FastMath\obj\Debug\FastMath.FastMath.resources
+C:\Users\Longi\Desktop\ProjektLabor\FastMath\FastMath\FastMath\obj\Debug\FastMath.Properties.Resources.resources
+C:\Users\Longi\Desktop\ProjektLabor\FastMath\FastMath\FastMath\obj\Debug\FastMath.csproj.GenerateResource.Cache

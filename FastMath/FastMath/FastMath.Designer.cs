@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FastMath));
             this.Osszeadas = new System.Windows.Forms.Button();
             this.Kivonas = new System.Windows.Forms.Button();
             this.Szorzas = new System.Windows.Forms.Button();
@@ -94,7 +95,9 @@
             this.Controls.Add(this.Szorzas);
             this.Controls.Add(this.Kivonas);
             this.Controls.Add(this.Osszeadas);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FastMath";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FastMath";
             this.ResumeLayout(false);
             this.PerformLayout();
