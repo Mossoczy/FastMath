@@ -12,9 +12,19 @@
 - Ez után a megfelelő beállításokkal elindul a játék, addig fut amig, le nem allítja a felhasználó (leállítás után a program főmenüjét kapjuk vissza)
 
 
+3.  Jelenlegi üzleti folyamatok modellje
+A napközis tanárra egyedül jut rengetek diák, akikkel ebéd után megoldja a házi feladataikat és szükség esetén segít
+is benne. Sajnos a nevelő nem tud minden diákot egyszerre lekötni. Amint a diákok végeznek a házi megoldásával
+bekapcsolják a gépeket és közösségi médiát néznek, vagy videókat az interneten. Valószínűsíthető, hogy a jövőben nagyobb százalékban lesz jelen
+az informatika, mint a mai világban. A programunk célközönsége az alsó tagozatos általános iskolások. Ezzel a programmal akár iskolában is tudnák gyakorolni a 
+számtant, első osztálytól negyedik osztályosoknak ajánlott. Egyszerűen használható, mivel nem igényel internet hozzá férést, valamint a program
+készítése közben arra törekedtünk, hogy egyértelmű legyen a program fiatal korú felhasználók számára is. 
 
 
-
+4. Igényelt üzleti folyamatok modellje
+Azért, hogy egyszerűbbé tegyük a napközis tanár feladatát létrehozunk egy modern programot, amely a szabad foglalkozás
+ideje alatt segít együttesen lekötni a diákokat, miközben segít nekik több készségük fejlesztésében is.
+Elsődleges cél a logika fejlesztése, valamint a matematikai tudás gyakorlása és fejlesztése.
 
 Terjedelme legyen 2x annyi mint az előző projekté 
 Követelmény, határidő előtti befejezés 
