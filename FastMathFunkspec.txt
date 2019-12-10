@@ -1,5 +1,22 @@
+﻿1. A rendszer céljai és nem céljai
+- 4 különböző matematikai művelet
+- Könnyű kezelhetőseg
+- Nehézségi szint beállítása
+- A játékok ne legyenek túl bonyolúltak
+- Fejlessze a tanulók képességeit
+- A tanulók szórakoztatásas
+
+2. Vágyálom rendszer
+- Az program betöltésekor egy főmenü fogadja a felhasználót, ahol választhat négy matematikai művelet (összeadás, kivonás, szorzás, osztás)
+- A feladat kiválasztása után választaniuk kell a játékosnak, hogy milyen nehézségen tenné próbára magát.
+- Ez után a megfelelő beállításokkal elindul a játék, addig fut amig, le nem allítja a felhasználó (leállítás után a program főmenüjét kapjuk vissza)
+
+
+
+
+
+
 Terjedelme legyen 2x annyi mint az előző projekté 
-Rendszer célja a szórakoztató jellegű tanítás
 Követelmény, határidő előtti befejezés 
 Használati eset: az ember matematikai képességeinek határait feszegeti az egyre nehezebb 
 de annál több pontot érő feladatok megoldása 
