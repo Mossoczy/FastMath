@@ -126,15 +126,20 @@ namespace FastMath
             }
             else
             {
-                taskCount++;
                 timer.Stop();
                 timeRemain.Text = "Hátralévő idő:\n" + "Az idő lejárt!";
                 MessageBox.Show("Sajnos nem sikerült időben befejezni.", ":(");
-                if (taskCount<=maxTask)
+                if (taskCount+1!=maxTask)
                 {
                     incAnswers++;
                     incorrectAnswers.Text = "Helytelen megoldások száma: " + incAnswers;
                     startTask();
+                }
+                else
+                {
+                    incAnswers++;
+                    incorrectAnswers.Text = "Helytelen megoldások száma: " + incAnswers;
+                    GameOver();
                 }
             }
         }
@@ -342,13 +347,10 @@ namespace FastMath
             done.Text = "Kész";
             if (taskCount+1 == maxTask)
             {
-                timer.Stop();
-                MessageBox.Show("Vége a " + (taskCount+1) + " feladatnak.\nHelyes megoldások: " + cAnswers + "\nHelytelen megoldások: " + incAnswers,"Game Over");
-                this.Controls.Clear();
-                InitializeComponent();
+                GameOver();
             }
 
-            if ((wrong==true || correct==true || counter==0) && invalid==false)
+            else if ((wrong==true || correct==true || counter==0) && invalid==false)
             {
                 taskCount++;
                 startTask();
@@ -370,6 +372,16 @@ namespace FastMath
                 MessageBox.Show("Érvénytelen érteket adtál meg");
                 timer.Start();
             }
+        }
+        private void GameOver()
+        {
+            timer.Stop();
+            MessageBox.Show("Vége a " + (taskCount+1) + " feladatnak.\nHelyes megoldások: " + cAnswers + "\nHelytelen megoldások: " + incAnswers, "Game Over");
+            this.Controls.Clear();
+            taskCount = 0;
+            cAnswers = 0;
+            incAnswers = 0;
+            InitializeComponent();
         }
     }
 }
