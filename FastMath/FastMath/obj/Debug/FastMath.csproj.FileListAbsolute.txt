@@ -19,3 +19,12 @@ C:\Users\Longi\Desktop\ProjektLabor\FastMath\FastMath\FastMath\obj\Debug\FastMat
 C:\Users\Longi\Desktop\ProjektLabor\FastMath\FastMath\FastMath\obj\Debug\FastMath.FastMath.resources
 C:\Users\Longi\Desktop\ProjektLabor\FastMath\FastMath\FastMath\obj\Debug\FastMath.Properties.Resources.resources
 C:\Users\Longi\Desktop\ProjektLabor\FastMath\FastMath\FastMath\obj\Debug\FastMath.csproj.GenerateResource.Cache
+D:\fastmath\FastMath\FastMath\FastMath\bin\Debug\FastMath.exe.config
+D:\fastmath\FastMath\FastMath\FastMath\obj\Debug\FastMath.exe
+D:\fastmath\FastMath\FastMath\FastMath\obj\Debug\FastMath.pdb
+D:\fastmath\FastMath\FastMath\FastMath\bin\Debug\FastMath.exe
+D:\fastmath\FastMath\FastMath\FastMath\bin\Debug\FastMath.pdb
+D:\fastmath\FastMath\FastMath\FastMath\obj\Debug\FastMath.csprojResolveAssemblyReference.cache
+D:\fastmath\FastMath\FastMath\FastMath\obj\Debug\FastMath.FastMath.resources
+D:\fastmath\FastMath\FastMath\FastMath\obj\Debug\FastMath.Properties.Resources.resources
+D:\fastmath\FastMath\FastMath\FastMath\obj\Debug\FastMath.csproj.GenerateResource.Cache

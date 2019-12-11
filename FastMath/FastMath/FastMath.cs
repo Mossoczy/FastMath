@@ -368,7 +368,6 @@ namespace FastMath
             catch (Exception)
             {
                 invalid = true;
-                timer.Stop();
                 MessageBox.Show("Érvénytelen érteket adtál meg");
                 timer.Start();
             }
