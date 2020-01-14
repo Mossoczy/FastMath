@@ -5,32 +5,37 @@ jellegű játékokat. Mint tudjuk, matematikát csak egy módon tudja elsajátí
 Az általunk készített játékkal ezt meg tudjuk valósítani mellyel különböző matematikai 
 műveleteket tudunk gyakorolni. Ha a felhasználó úgy érzi elsajátította a kellő tudást 
 akkor akár egyel nehezebb szintre is léphet.
+Célunk az, hogy a diákok a saját tudásuk alapján dolgozzanak, ezért minden feladat véletlenszerű.
 
 2. Projekt terv
 A rendszer létrehozásához rendelkezésre álló erőforrások: A felhasználó által
 használt notebookok/asztali számítógépek melyeknek rendelkezniük kell egy futó
 opercációs rendszerrel(Windows 7, Windows 10, Linux)
 
-Betenbuk Viktor: Fő oldal, a program fejlesztéseés dizájn.
-Mossóczy Kristóf: A program fejlesztéseés dizájn.
-Czafik Milán: A program fejlesztéseés dizájn.
+Betenbuk Viktor: Fő oldal, a program fejlesztése és dizájn.
+Mossóczy Kristóf: A program fejlesztése és dizájn.
+Czafik Milán: A program fejlesztése és dizájn.
 
 Mérföldkövek:
 I.    Feladatok kiosztása megegyezés és tudás szerint.
 II.   Dokumentációk, leírások képernyő tervek véglegesítése.
 III.  Git repo folyamatos frissítése amikor akármi elkészül.
 IV.   Folyamatos kapcsolattartás a projektben résztvevőkkel.
-V.   Tesztelési folyamatok befejezése.
-VI.  Felkészülés a projekt bemutatására.
-VII. Bemutatás.
+V.    Tesztelési folyamatok befejezése.
+VI.   Felkészülés a projekt bemutatására.
+VII.  Bemutatás.
 
 3. Funkcionális leírás
 A program funkcionális leírása:
-Futtatás után egy kezelőfelület jelenik meg, ahol el kell döntenie a felhasználónak, hogy mit szeretne gyakorloni
-(összeadás, kivonás, szorzás, osztás), valamint milyen nehézséggel szeretné azt megtenni(könnyű, közepes, nehéz).
+Futtatás után egy kezelőfelület jelenik meg, ahol 3 menüpont fogad. Egy indítás menüpont, egy eredmények
+menüpont, ahol az eddigi eredményeink nézhetőek meg, illetve egy kilépés menüpont. Az indításra kattintva
+felugrik egy ablak, ahol el kell döntenie a felhasználónak, hogy mit szeretne gyakorloni
+(összeadás, kivonás, szorzás, osztás), valamint milyen nehézséggel szeretné azt megtenni(könnyű, közepes, nehéz, vegyes).
 Miután a felhasználó eldöntötte, mit szeretne gyakorolni, egy másik ablak jelenik meg, rajta két számmal, egy
-műveletjellel, egy számlálóval(mely a hátralévő időt mutatja)
+műveletjellel, egy számlálóval(mely a hátralévő időt mutatja) és 10 feladattal.
 Ezen kívül a helyes/helytelen megoldások számai is fel van tűntetve.
+Ha az összes feladatot befejeztük, megkapjuk a helyes feladatokért kapott pontszámokat
+és el tudjuk menteni az eredményünket egy a felhasználó által begépelt névvel.
 
 4. Fizikai Követelmény
 Futtatás módja:
