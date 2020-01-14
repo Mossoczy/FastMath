@@ -11,6 +11,21 @@
     <AssemblyName>FastMath</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -63,6 +78,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,7 +94,58 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="higscores.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="higscores_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>higscores.mdf</DependentUpon>
+    </Content>
     <Content Include="Icon\ikon.ico" />
+    <None Include="Images\vegyes2.png" />
+    <None Include="Images\vegyes.png" />
+    <None Include="Images\szor2.png" />
+    <None Include="Images\szor.png" />
+    <None Include="Images\oszt2.png" />
+    <None Include="Images\oszt.png" />
+    <None Include="Images\ossz2.png" />
+    <None Include="Images\ossz.png" />
+    <None Include="Images\med2.png" />
+    <None Include="Images\med.png" />
+    <None Include="Images\kiv2.png" />
+    <None Include="Images\kiv.png" />
+    <None Include="Images\hard2.png" />
+    <None Include="Images\hard.png" />
+    <None Include="Images\easy2.png" />
+    <None Include="Images\easy.png" />
+    <None Include="Images\done2.png" />
+    <None Include="Images\done.png" />
+    <None Include="Images\back2.png" />
+    <None Include="Images\back.png" />
+    <None Include="Images\start2.png" />
+    <None Include="Images\start.png" />
+    <None Include="Images\quit2.png" />
+    <None Include="Images\quit.png" />
+    <None Include="Images\highscores2.png" />
+    <None Include="Images\highscores.png" />
+    <None Include="Images\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
