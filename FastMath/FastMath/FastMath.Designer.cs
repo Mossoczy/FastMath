@@ -29,6 +29,7 @@
 
         private void MainMenu()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FastMath));
             this.ClientSize = new System.Drawing.Size(584, 761);
             this.startBtn = new System.Windows.Forms.Button();
             this.highscoresBtn = new System.Windows.Forms.Button();
@@ -104,8 +105,10 @@
             this.Controls.Add(this.quitBtn);
             this.Controls.Add(this.highscoresBtn);
             this.Controls.Add(this.startBtn);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainMenu";
             this.Text = "Főmenü";
+            this.MaximizeBox = false;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,6 +270,15 @@
         }
         private void InitializeComponent()
         {
+            this.SuspendLayout();
+            // 
+            // FastMath
+            // 
+            this.ClientSize = new System.Drawing.Size(284, 261);
+
+            this.Name = "FastMath";
+            this.ResumeLayout(false);
+
         }
 
         private void Difficulty()
@@ -390,6 +402,7 @@
             this.timeRemain = new System.Windows.Forms.Label();
             this.answer = new System.Windows.Forms.TextBox();
             this.tasks = new System.Windows.Forms.Label();
+            this.allscores = new System.Windows.Forms.Label();
             this.ClientSize = new System.Drawing.Size(1000, 600);
             this.SuspendLayout();
             // 
@@ -409,12 +422,12 @@
             // correctAnswer
             // 
             this.correctAnswer.BackColor = System.Drawing.Color.Transparent;
+            this.correctAnswer.ForeColor = System.Drawing.Color.White;
             this.correctAnswer.AutoSize = true;
             this.correctAnswer.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.correctAnswer.Name = "correctAnswer";
             this.correctAnswer.Size = new System.Drawing.Size(90, 13);
             this.correctAnswer.TabIndex = 3;
-            this.correctAnswer.Text = "Helyes megoldás:";
             // 
             // correctAnswers
             // 
@@ -439,6 +452,18 @@
             this.incorrectAnswers.Size = new System.Drawing.Size(147, 13);
             this.incorrectAnswers.TabIndex = 5;
             this.incorrectAnswers.Text = "Helytelen megoldások száma:";
+            // 
+            // allscores
+            // 
+            this.allscores.BackColor = System.Drawing.Color.Transparent;
+            this.allscores.ForeColor = System.Drawing.Color.White;
+            this.allscores.AutoSize = true;
+            this.allscores.Location = new System.Drawing.Point(30, 20);
+            this.allscores.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.allscores.Name = "incorrectAnswers";
+            this.allscores.Size = new System.Drawing.Size(147, 13);
+            this.allscores.TabIndex = 5;
+            this.allscores.Text = "Pontok: 0";
             // 
             // done
             // 
@@ -512,6 +537,7 @@
             this.Controls.Add(this.correctAnswer);
             this.Controls.Add(this.firstNum);
             this.Controls.Add(this.tasks);
+            this.Controls.Add(this.allscores);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Task";
             this.Text = "Feladat";
@@ -523,17 +549,28 @@
         private void GameEnded()
         {
             this.scoreearned = new System.Windows.Forms.Label();
+            this.writeurname = new System.Windows.Forms.Label();
             this.writename = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
+            // writeurname
+            // 
+            this.writeurname.AutoSize = true;
+            this.writeurname.BackColor = System.Drawing.Color.Transparent;
+            this.writeurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.writeurname.ForeColor = System.Drawing.Color.White;
+            this.writeurname.Name = "writenameLbl";
+            this.writeurname.TabIndex = 0;
+            this.writeurname.Text = "Írd be a neved a mezőbe.";
+            // 
             // scoreearned
             // 
+            this.scoreearned.BackColor = System.Drawing.Color.Transparent;
             this.scoreearned.AutoSize = true;
             this.scoreearned.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.scoreearned.ForeColor = System.Drawing.Color.White;
             this.scoreearned.Name = "score";
-            this.scoreearned.Size = new System.Drawing.Size(294, 46);
-            this.scoreearned.TabIndex = 0;
+            this.scoreearned.TabIndex = 1;
             this.scoreearned.Text = "Pontot értél el!";
             // 
             // writename
@@ -543,7 +580,7 @@
             this.writename.Name = "writename";
             this.writename.Size = new System.Drawing.Size(216, 45);
             this.writename.Location = new System.Drawing.Point((this.ClientSize.Width - this.writename.Width) / 2, 291);
-            this.writename.TabIndex = 1;
+            this.writename.TabIndex = 2;
             this.writename.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // GameEnded
@@ -556,6 +593,7 @@
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.Controls.Add(this.writename);
             this.Controls.Add(this.scoreearned);
+            this.Controls.Add(this.writeurname);
             this.Controls.Add(this.done);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
@@ -671,6 +709,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label allscores;
+        private System.Windows.Forms.Label writeurname;
     }
 }
 

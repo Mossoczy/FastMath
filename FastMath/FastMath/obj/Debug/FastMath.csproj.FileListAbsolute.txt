@@ -30,3 +30,14 @@ C:\Users\Longi\Desktop\Prog\ProjektLabor\FastMath\FastMath\FastMath\obj\Debug\Fa
 C:\Users\Longi\Desktop\Prog\ProjektLabor\FastMath\FastMath\FastMath\obj\Debug\FastMath.csproj.GenerateResource.Cache
 C:\Users\Longi\Desktop\Prog\ProjektLabor\FastMath\FastMath\FastMath\bin\Debug\higscores.mdf
 C:\Users\Longi\Desktop\Prog\ProjektLabor\FastMath\FastMath\FastMath\bin\Debug\higscores_log.ldf
+C:\Users\Longi\Desktop\git\FastMath\FastMath\FastMath\bin\Debug\FastMath.exe.config
+C:\Users\Longi\Desktop\git\FastMath\FastMath\FastMath\obj\Debug\FastMath.exe
+C:\Users\Longi\Desktop\git\FastMath\FastMath\FastMath\obj\Debug\FastMath.pdb
+C:\Users\Longi\Desktop\git\FastMath\FastMath\FastMath\bin\Debug\higscores.mdf
+C:\Users\Longi\Desktop\git\FastMath\FastMath\FastMath\bin\Debug\higscores_log.ldf
+C:\Users\Longi\Desktop\git\FastMath\FastMath\FastMath\bin\Debug\FastMath.exe
+C:\Users\Longi\Desktop\git\FastMath\FastMath\FastMath\bin\Debug\FastMath.pdb
+C:\Users\Longi\Desktop\git\FastMath\FastMath\FastMath\obj\Debug\FastMath.csprojResolveAssemblyReference.cache
+C:\Users\Longi\Desktop\git\FastMath\FastMath\FastMath\obj\Debug\FastMath.FastMath.resources
+C:\Users\Longi\Desktop\git\FastMath\FastMath\FastMath\obj\Debug\FastMath.Properties.Resources.resources
+C:\Users\Longi\Desktop\git\FastMath\FastMath\FastMath\obj\Debug\FastMath.csproj.GenerateResource.Cache

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace FastMath
 {
@@ -32,7 +33,6 @@ namespace FastMath
         {
             MainMenu();
         }
-
         private void startTask()
         {
             counter = 20;
@@ -268,10 +268,9 @@ namespace FastMath
             firstNum.Text = (a*b).ToString() + művelet + b.ToString() + "=?";
             result = a ;
         }
-
         private void done_Click(object sender, EventArgs e)
         {
-            this.correctAnswer.Location = new System.Drawing.Point((this.ClientSize.Width - this.correctAnswer.Width) / 2, 143);
+            
             CheckValidAnswer();
             if (answer.Text==result.ToString())
             {
@@ -292,15 +291,18 @@ namespace FastMath
                     default:
                         break;
                 }
+                allscores.Text = "Pontok:" + score;
                 cAnswers += 1;
                 correctAnswer.ForeColor = Color.Green;
                 correctAnswer.Text = "Helyes megoldás!";
+                this.correctAnswer.Location = new System.Drawing.Point((this.ClientSize.Width - this.correctAnswer.Width) / 2, 143);
                 correct = true;
             }
             else if(invalid==false)
             {
                 correctAnswer.ForeColor = Color.Red;
                 correctAnswer.Text = "Helyes megoldás:\n"+result;
+                this.correctAnswer.Location = new System.Drawing.Point((this.ClientSize.Width - this.correctAnswer.Width) / 2, 143);
                 incAnswers += 1;
                 wrong = true;
             }
@@ -322,7 +324,6 @@ namespace FastMath
         }
         private void CheckValidAnswer()
         {
-
             invalid = false;
             try
             {
@@ -342,8 +343,9 @@ namespace FastMath
             //MessageBox.Show("Vége a " + (taskCount+1) + " feladatnak.\nHelyes megoldások: " + cAnswers + "\nHelytelen megoldások: " + incAnswers, "Game Over");
             this.Controls.Clear();
             GameEnded();
-            scoreearned.Text = score + " Pontot értél el!";
+            scoreearned.Text = score + " Pontot értél el!\n";
             this.scoreearned.Location = new System.Drawing.Point((this.ClientSize.Width - this.scoreearned.Width) / 2, 89);
+            this.writeurname.Location = new System.Drawing.Point((this.ClientSize.Width - this.writeurname.Width) / 2, 140);
         }
 #region Events
         private void Osszeadas_Click(object sender, EventArgs e)
