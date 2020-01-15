@@ -2,7 +2,7 @@
 Mai rohanó világunkban a közösségi média megpecsételi fiatal tanulóink életét.
 Iskolánk vezetősége ezért állt elő azzal a brilliáns ötlettel, hogy készítsünk a napközis tanulók számára oktató
 jellegű játékokat. Ehhez nem kell mást tenni, mint minden egyéb weboldalt
-a délutának órákban letiltani az iskola hálózatában.(Értsük ezalatt a Facebook, Youtube és más egyéb platformokat.)
+a délutának órákban letiltani az iskola hálózatában, és csak a diákok érdekéért szóló programokat telepíteni(Értsük ezalatt a Facebook, Youtube és más egyéb platformokat.)
 
 2. Jelenlegi helyzet
 Jelenleg a tanulók java része használ valamiféle számítógépet(ha mást nem, telefont biztos), ez vezethet ahhoz,
@@ -19,6 +19,7 @@ megismertetése a gyerekekkel.
 5. Vágyálom rendszer 
 Szeretnénk olyan játékot készíteni, amely könnyen kezelhetőek és nem állnak messze az oktatástól
 sem, gondolunk itt logika bővítésére.
+Célunk az, hogy a diákok a saját tudásuk alapján dolgozzanak, ezért minden feladat véletlenszerű.
 
 6. Követlménylista
 ID  Modul            Név                Leírás
