@@ -7,9 +7,11 @@
 - A tanulók szórakoztatásas
 
 2. Vágyálom rendszer
-- Az program betöltésekor egy főmenü fogadja a felhasználót, ahol választhat négy matematikai művelet (összeadás, kivonás, szorzás, osztás)
-- A feladat kiválasztása után választaniuk kell a játékosnak, hogy milyen nehézségen tenné próbára magát.
-- Ez után a megfelelő beállításokkal elindul a játék, addig fut amig, le nem allítja a felhasználó (leállítás után a program főmenüjét kapjuk vissza)
+- A program betöltésekor egy főmenü fogadja a felhasználót, ahol választhat 3 opció közül (Indítás, Eredmények, Kilépés)
+- Indításra kattintva négy matematikai művelet közül lehet választani(összeadás, kivonás, szorzás, osztás)
+- A feladat kiválasztása után választaniuk kell a játékosnak, hogy milyen nehézségen tenné próbára magát.(Könnyű, Közepes, Nehéz, Vegyes)
+- Ez után a megfelelő beállításokkal elindul a játék, kapunk 10 feladatot, minden egyes feladat megoldása után, kiírja a játék, hogy amit beírtam válasz helyes-e, vagy nem.ű
+- Ha végeztünk a 10 feladattal, egy nevet fog kérni a játék, mellyel elmentheti a felhasználó, hány pontot ért el.
 
 
 3.  Jelenlegi üzleti folyamatok modellje
@@ -46,5 +48,6 @@ ID  Modul            Név                Leírás
 Bárki/Diák: A játékot bárki használhatja.  Ők elindíthatják a játékokat és
 szórakozhatnak.
 
+
 7. Terjedelem
-Körülbelül 500 soros kód.
+Körülbelül 2000 soros kód.
