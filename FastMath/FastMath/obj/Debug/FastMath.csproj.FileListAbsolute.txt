@@ -41,3 +41,14 @@ C:\Users\Longi\Desktop\git\FastMath\FastMath\FastMath\obj\Debug\FastMath.csprojR
 C:\Users\Longi\Desktop\git\FastMath\FastMath\FastMath\obj\Debug\FastMath.FastMath.resources
 C:\Users\Longi\Desktop\git\FastMath\FastMath\FastMath\obj\Debug\FastMath.Properties.Resources.resources
 C:\Users\Longi\Desktop\git\FastMath\FastMath\FastMath\obj\Debug\FastMath.csproj.GenerateResource.Cache
+C:\Users\x\Desktop\FastMath_bemutato\FastMath\FastMath\FastMath\bin\Debug\FastMath.exe.config
+C:\Users\x\Desktop\FastMath_bemutato\FastMath\FastMath\FastMath\obj\Debug\FastMath.exe
+C:\Users\x\Desktop\FastMath_bemutato\FastMath\FastMath\FastMath\obj\Debug\FastMath.pdb
+C:\Users\x\Desktop\FastMath_bemutato\FastMath\FastMath\FastMath\bin\Debug\higscores.mdf
+C:\Users\x\Desktop\FastMath_bemutato\FastMath\FastMath\FastMath\bin\Debug\higscores_log.ldf
+C:\Users\x\Desktop\FastMath_bemutato\FastMath\FastMath\FastMath\bin\Debug\FastMath.exe
+C:\Users\x\Desktop\FastMath_bemutato\FastMath\FastMath\FastMath\bin\Debug\FastMath.pdb
+C:\Users\x\Desktop\FastMath_bemutato\FastMath\FastMath\FastMath\obj\Debug\FastMath.csprojResolveAssemblyReference.cache
+C:\Users\x\Desktop\FastMath_bemutato\FastMath\FastMath\FastMath\obj\Debug\FastMath.FastMath.resources
+C:\Users\x\Desktop\FastMath_bemutato\FastMath\FastMath\FastMath\obj\Debug\FastMath.Properties.Resources.resources
+C:\Users\x\Desktop\FastMath_bemutato\FastMath\FastMath\FastMath\obj\Debug\FastMath.csproj.GenerateResource.Cache
