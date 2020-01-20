@@ -1,0 +1,95 @@
+Tesztelés
+Mossóczy Kristóf
+Czafik Milán 
+Betenbuk Viktor
+
+FASTMATH
+
+
+
+
+
+
+ 
+
+
+A dokumentumot megkapják
+Név	Funkció
+Tajti Tibor 	Használat/Vizsgálat
+
+
+Feladatkörök és felelősségek
+Feladatkör	Felelősség/tevékenység	Személy
+Tesztelő:		A teszt végrehajtása
+	Észrevételek dokumentálása	Mossóczy Kristóf
+Szakértő:	A szakértő az észrevételeket elemzi és megoldást javasol.	Betenbuk Viktor
+Czafik Milán
+Teszt-koordinátor:		A tesztterv jóváhagyatása a projektmenedzserrel
+	Ellentmondások  kezelése 
+	Helyes és időbeni hibakezelés 	Czafik Milán
+Projektvezető:		Teszt terv jóváhagyása 
+	Teszt forgatókönyv (testscript)	Betenbuk Viktor
+
+Röviden: A program/játék számtani műveleteket ad fel nekünk megoldásra. Rajtunk múlik meg tudjuk-e oldani jól és időben(mert ha végtelenségig gondolkozhatnánk az túl egyszerű lenne és ez kizárja a segédeszközök használatát), hogy pontot kaphassunk. A játékban összeadás kivonás szorzás és osztás műveletekkel játszhatunk.
+A program tesztelése során minden gomb használata, megfelelő függvényhez való kapcsolata és ésszerű elrendezése valamint mindegyik számtani művelet működés lépésről lépésre ellenőrizve lett, a megkapott pontok összeadása a jól és időben megoldott feladatokért ahogy a visszaszámláló is. Hiba nem volt észlelhető, feltehetőleg a munkafolyamat/program írás közbeni hibák felfedezésének kijavítása miatt. A program minden elvárásnak eleget tesz.
+
+A teszt sikerességének kritériumai:
+	Technikai, a teszt forgatókönyvben leírtak szerint. 
+	A projekt menedzser jóváhagyása a teszt leszállítandókra. 
+
+Jóváhagyó
+Név:	
+Szervezeti egység/ beosztás:	
+Aláírás:	Dátum:
+Tesztelést elvégezte
+Név:	Mossóczy Kristóf
+Szervezeti egység/ beosztás:	csapattag
+
+
+
+Alfa-teszt: ezt mi végezzük el a kész programon, minden szempontot vizsgálva ez egyfajta belsős teszt elzárva a külvilágtól mielőtt bárki külső felhasználó megkapná azt
+
+Tesztelési terv: Fejlesztői, Prototípus, Integrációs, Elfogadási, Terheléses, Biztonsági, Megbízhatósági valamint Hordozhatósági, Megfelelési tesztet végzek a projektünkön.
+
+A végére a Go-live teszt marad amit nem egyedül végzek, hogy más környezetben is működőnek vélhető legyen a program.
+A tesztelési tervben megadott sorrend alapján végzem el a tesztelést. 
+
+Fejlesztői teszt: az alapvető funkciókkal nem volt baj, megvizsgáltam,működtek.
+Prototípus teszt: a rendszer moduljait leteszteltem csak esztétikai hibákat véltem felfedezni illetve néhány pontos vessző lemaradt, amiket pótoltunk.
+Integrációs teszt: a rendszerben lévő adatmigrációs megoldásokat megfelelőnek észleltem, ezen belül is különös figyelmet fordítottam a kapott pontszámok összeadott értékének különböző helyen lévő megjelenítésére.
+Elfogadási teszt: én teszteltem a felhasználó barát felület megfelelését, amit megfelelőnek találtam (nem akadtam el, nem kerestem a gombokat és a megjelenített adatokat sem kellett böngésznem használat közben.
+Terheléses teszt: tervezett kapacitásnak több száz elérhető pontot gondoltunk, azonban a rendelkezésre álló maximális elérhető pontszám 2000, így többet kellene játszani a játékkal mint amennyit egy ember rá szán időt illetve türelme van szerintünk. Normális használat közben lett tesztelve, nem minden gombot össze vissza nyomkodva.
+Biztonsági teszt: nem végeztem el mivel nem szerezhető meg mindenki számára az internet használatával és személyes valamint pénzügyi adatokat sem tartalmaz.
+Megbízhatósági teszt: a programot futtatva figyeltem egy adott matematikai példa ismétlődését így a hosszabb ideig történő működést is meg tudtam figyelni amivel nem volt semmi hiba és az adott példa ismétlésekor ugyan azt a helyes eredményt adta ki amit először tapasztaltam.
+Hordozhatósági teszt: a futtatott programot Windows 7, 8, 8.1 és 10-en is kipróbáltuk, működése közben semmilyen változást nem észleltünk az operációs rendszerek között. 
+Megfelelési teszt: a rendszer kapcsán megkötött szerződésekben foglaltaknak való megfelelést vizsgálom, ebben az esetben a Tanár Úr által közölt elvárások a mi szerződésünk és a projekt ennek eleget tesz legjobb tudásom szerint.
+Go-live teszt: ezt mind a hárman elvégeztük annak érdekében, hogy megbizonyosodjunk mindenhol megnyitja-e a programot és a benne lévő programkódot le is futtatja hiba nélkül. Mindhárman meg tudtuk nyitni a programot és használni is tudtuk minden funkcióját.
+
+
+
+
+
+
+
+
+
+
+
+Tesztelési Jegyzőkönyv
+Teszt	Tesztelő	Megfelelés
+ Fejlesztői	Mossóczy Kristóf	 megfelelt
+ Prototípus	Mossóczy Kristóf	 megfelelt
+ Integrációs	Mossóczy Kristóf	 megfelelt
+ Elfogadási	Mossóczy Kristóf	 megfelelt
+ Terheléses	Mossóczy Kristóf	 megfelelt
+Biztonsági	Mossóczy Kristóf	megfelelt
+Hordozhatósági	Mossóczy Kristóf
+Betenbuk Viktor
+Czafik Milán	megfelelt
+Megbízhatósági 	Mossóczy Kristóf	megfelelt
+Megfelelési	Mossóczy Kristóf	megfelelt
+ Go-live 	Betenbuk Viktor 
+Czafik Milán
+Mossóczy Kristóf	megfelelt
+
+Béta-teszt: ezt Tanár Úr végzi el mint külső felhasználó aki a projekt/program használhatóságát, kényelmes, egyszerű kezelését figyeli és megjegyzést közöl velünk projekt készítőkkel. 
