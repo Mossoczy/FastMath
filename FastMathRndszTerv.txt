@@ -1,4 +1,13 @@
-﻿1. Bevezetés
+﻿Cél, hogy minél részletesebben meghatározzuk mit szeretnénk látni a projekt végén és ezt le is kell írni. 
+Nyílván nem feltétlenül lehet minden egyes részét maximális részletekbe menően definiálni, de erre törekszünk. 
+Minél jobban meg tudjuk határozni mit szeretnék, annál inkább tudjuk csökkenteni a 
+projekt rizikófaktorait az adott szabályok és igények határain belül.
+
+Konceptuális: 1. 2. 6.
+Nagyvonalú: 1. 2. 3. 4. 6.
+Részletes: 1. 2. 3. 4. 5. 6. (adott időintervallum megadása, ezt a trello-ban megadtuk mindegyiknek, hogy minek mi a határideje)
+
+1. Bevezetés
 Mai rohanó világunkban a közösségi média megpecsételi fiatal tanulóink életét.
 Iskolánk vezetősége ezért állt elő azzal a brilliáns ötlettel, hogy készítsünk a napközis tanulók számára oktató
 jellegű játékokat. Mint tudjuk, matematikát csak egy módon tudja elsajátítani az pedig a gyakorlás. 
@@ -97,4 +106,5 @@ Fejlesztői környezet:
 	követelmény specifikáció
 	eredménye a szoftver követelmény-leírása 
 	Egy rendszer funkcionális követelményei leírják, hogy a rendszernek milyen funkciókkal kell rendelkezni, hogyan kellene működnie 
-	
+	-Nemfunkcionális követelmények
+	megbízhatóság, válaszidő, tárfoglalás, rugalmasság, robosztusság, hordozhatóság
